@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+
+body {
+  background-color: #e4eaf2;
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  background-color: white;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  padding: 10px 15px;
+  margin-left: 10%;
+  margin-top: 1.5rem;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.search-toggle-container {
+  display: flex;
+  align-items: center;
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.toggle-container button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  background-color: #e4eaf2;
+  border: none;
+  border-radius: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toggle-container button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.toggle-container button:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+.toggle-container button .fa-icon {
+  margin-right: 5px;
+}
+
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.header {
+  font-size: 1.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  margin-left: 0.5rem;
+}
+
+input {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+}
+
+.forecast-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.forecast-day {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 12px 20px;
+  padding-right: 90px;
+  border: 2px solid #ccc;
+  border-radius: 50px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  height: 1rem;
+}
+
+.search-box input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.search-box input::placeholder {
+  color: #aaa;
+}
+
+.search-btn {
+  position: absolute;
+  right: 7px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  transition: background-color 0.3s ease-in-out;
+  height: 2.5rem;
+}
+
+.search-btn:hover {
+  background-color: #0056b3;
+}
+
+.toggle-container {
+  width: auto;
+}
+
+.weather-details {
+  background-color: white;
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 1rem;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.left {
+  width: 50%;
+  padding: 20px;
+  background: linear-gradient(270deg, #f5f5f5, #e0e0e0, #f5f5f5);
+  background-size: 400% 400%;
+  animation: gradientAnimation 8s ease infinite;
+  border-radius: 20px 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  margin-right: 10px;
+  color: #007bff;
+}
+
+
+
+.right {
+  width: 50%;
+  padding: 20px;
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 0 20px 20px 0;
+}
+
+.city-name {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: cursive;
+  font-weight: 600;
+  font-size: 45px;
+  margin-top: -0.5rem;
+  color: white;
+}
+
+.weather-desc {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 35px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: white;
+}
+
+.weather-image {
+  height: 100px;
+  width: 100px;
+  margin-top: -1.8rem;
+}
+
+.forecast-heading {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  margin-bottom: 1rem;
+}
+
+.forecast-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: auto;
+  flex-wrap: wrap;
+}
+
+.forecast-day {
+  width: 17%;
+  height: 180px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  border-radius: 8px;
+  padding: 10px;
+  color: black;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.forecast-day p {
+  margin: 5px 0;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.forecast-icon {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+}
+
+.weather-icon {
+  font-size: 100px;
+  text-align: center;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0f8ff;
+  background-color: inherit;
+  margin-top: 150px;
+  color: #007bff;
+}
+
+.animation-text {
+  margin-top: 3rem;
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .top {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+    width: 90%;
+  }
+
+  .toggle-container {
+    display: none; /* Hide toggle buttons */
+  }
+  .weather-details, .forecast-day {
+    width: 100%;
+  }
+  .forecast-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .city-name {
+    font-size: 30px;
+  }
+  .weather-desc {
+    font-size: 20px;
+  }
+  .weather-image {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .top {
+    margin-left: none;
+    max-width: fit-content;
+  }
+  .header {
+    font-size: 1rem;
+  }
+  .weather-details {
+    margin-left: none;
+    max-width: fit-content;
+    margin-right: 3rem;
+  }
+  .city-name {
+    font-size: 25px;
+  }
+  .weather-desc {
+    font-size: 18px;
+  }
+  .search-box input {
+    font-size: 0.9rem;
+  }
+  .search-btn {
+    font-size: 0.9rem;
+  }
+  .forecast-grid {
+    grid-template-columns: 1fr;
+  }
+  .forecast-day {
+    width: 90%;
+  }
+  .weather-image {
+    height: 60px;
+    width: 60px;
+  }
+  .animation-text {
+    font-size: 18px;
+  }
+}
+
