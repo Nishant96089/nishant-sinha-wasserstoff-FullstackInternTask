@@ -6,6 +6,8 @@ The Weather Dashboard is a React-based web application that provides users with 
 
 👉 Live Demo: <a href='https://task3-weather-dashboard.netlify.app/'>Weather Dashboard</a>
 
+👉 Video Explanation: <a href='https://drive.google.com/file/d/1S2BdYUxXOyQ7Y81rypELqgjjKNeiDjpZ/view?usp=drive_link'>Drive Link</a>
+
 ![Weather Forecast Dashboard](https://github.com/Nishant96089/Task3-Weather-Forecast-Dashboard/blob/main/public/screenshot.png)
 
 
